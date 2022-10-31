@@ -1,0 +1,14 @@
+.containerx {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+ 
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
