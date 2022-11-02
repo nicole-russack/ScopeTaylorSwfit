@@ -1,54 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link ref="stylesheet" src="" -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taylor Swift Quotes</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body{
-            background-color: black;
-            color:white;
-            text-align: center;
-        }
-        .container{
-            width: 80%;
-            margin-left:auto;
-            margin-right:auto;
-            background-color: #3C080C;
-            height:100vh;
-            padding-top:50px;
-        }
-        #img-div{
-            width:90%;
-            margin-left:auto;
-            margin-right:auto;
-        }
-        img{
-            width:100%;
-        }
-        .form-control{
-            color:white;
-            background-color: black;
-        }
-        h3{
-            padding:20px 0px;
-        }
+      body {
+        background-color: white;
+        color: white;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+      }
+      #container {
+        margin-top: 60px;
+      }
+      .form-control {
+        border: solid white 1px;
+        background-color: rgba(255, 255, 255, 0.143);
+      }
+      #icons-img {
+        height: 40px;
+      }
+      .navbar {
+        background-color: white;
+        text-align: right;
+      }
+      #title {
+        width: 900px;
+        color: pink;
+        padding: 0px 30px;
+        font-size: 40px;
+        font-family: "Bebas Neue", cursive;
+        filter: drop-shadow(0 0 0.02rem crimson);
+      }
+      #banner {
+        position: absolute;
+        left: 0px;
+        width: 120%;
+      }
+      #container {
+        width: 100%;
+        background-image: url("banner.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 60px;
+      }
+      #content-container {
+        width: 50%;
+        padding-top: 20%;
+        padding-left: 50px;
+        padding-bottom: 40%;
+      }
+      btn {
+        background-color: white;
+      }
+      #footer {
+        color: black;
+        font-size: 10px;
+        padding-top: 15px;
+      }
     </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Kanye Quotes</h1>
-        <div id="img-div">
-            <img src="kanye.jpeg">
-        </div>
-        <h3>How many Kanye quotes do you want?</h3>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <div class="navbar-collapse collapse w-200 dual-collapse2">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a id="title" href="#">Taylor Swift Quotes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target=".dual-collapse2"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div
+        class="navbar-collapse collapse w-200 dual-collapse2 order-2 order-md-2"
+      >
+        <ul class="navbar-nav mr-auto text-center">
+          <img id="icons-img" src="contact-icons.jpeg" />
+        </ul>
+      </div>
+    </nav>
+    <!-- <img id="banner" src="banner.jpeg"> -->
+    <div id="container">
+      <div id="content-container">
+        <h4>Enter a Taylor Swift Album:</h4>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Number of quotes" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
-          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Album Name"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn btn-outline-light"
+            type="button"
+            id="button-addon2"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
     </div>
-</body>
+    <div id="footer">
+      <p>Created by Isabella/Nicole Scope Cup Team</p>
+    </div>
+  </body>
 </html>

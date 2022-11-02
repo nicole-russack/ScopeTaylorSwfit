@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- link rel="stylesheet" href="/styles.css" -->
+    <script src="app.js"></script>
+
+    <style>
+      /* Container holding the image and the text */
+      .containerx {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      
+    
+      /* Centered text */
+      .centered {
+        position: absolute;
+        top: 30%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <palette>
+        <color name="Barn Red" hex="810D02" r="129" g="13" b="2" />
+        <color name="Black Bean" hex="3C0803" r="60" g="8" b="3" />
+        <color name="International Orange Engineering" hex="BE1F03" r="190" g="31" b="3" />
+        <color name="Rufous" hex="A51E03" r="165" g="30" b="3" />
+        <color name="Sinopia" hex="DC3702" r="220" g="55" b="2" />
+    </palette>
+    <title>Quote!</title>
+  </head>
+  <body style="background-color:black;">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Default</a>
+        </div>
+    </nav>
+
+    <div class="containerx">
+        <img src="image.jpeg" class="img-fluid" alt="...">
+        <div class="centered">{{quote}}</div>
+    </div>
+
+  </body>
+</html>
